@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Chip.css"
-export const Chip = () => {
+export const Chip = ({genero}) => {
   return (
-    <div className='chip'>
-      Action
+    <div className='chip' >
+      {genero}
     </div>
   )
 }
