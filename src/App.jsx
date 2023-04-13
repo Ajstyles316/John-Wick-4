@@ -1,13 +1,11 @@
-
-
 import './App.css'
+import MovieMain from './componentes/MovieMain'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-        hola
+        <MovieMain/>
     </div>
   )
 }
