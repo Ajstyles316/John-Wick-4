@@ -2,7 +2,8 @@ import React from 'react'
 import { ActorCard } from './ActorCard'
 import actors from '../assets/actor.json'
 import './TopCastContainer.css'
-export const TopCastContainer = () => {
+export const TopCastContainer = ({movie}) => {
+  const actors = movie.Actors ? movie.Actors.split(", ") : [];
   return (
     <section className="top-cast-container">
       <h6>Top Cast</h6>
@@ -19,3 +20,4 @@ export const TopCastContainer = () => {
   )
 }
 
+export default TopCastContainer

@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./BookingButton.css"
 export const BookingButton = () => {
+  
   return (
     <div className='booking-button-container'>
       <button>

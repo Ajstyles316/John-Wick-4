@@ -2,15 +2,14 @@ import React from 'react'
 import Gender from './Gender'
 import movie from '../assets/peliculas.json'
 import "./MovieMain.css"
-const MovieMain = () => {
+export const MovieMain = ({movie}) => {
   return (
     <div className='movie-main-container'>
-      
-      <img src={movie.imgsrc} alt="" />
+      <img src={movie.Poster} alt=""/>
       <Gender movie= {movie}/>
       <span>
         {
-            movie.resume
+            movie.Plot
         }
 
       </span>
@@ -18,4 +17,3 @@ const MovieMain = () => {
   )
 }
 
-export default MovieMain

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Chip } from './Chip'
 import "./Gender.css"
-const Gender = ({ movie }) => {
+export const Gender = ({ movie }) => {
   //const movie = props.movie
   
-  const gender = movie.gender
+  const gender = movie.Genre ? movie.Genre.split(", ") : [];
 
   return (
     <div className='gender-container'>
